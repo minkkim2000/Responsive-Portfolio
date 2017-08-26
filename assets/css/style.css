@@ -1,0 +1,313 @@
+/* ======GENERAL FONT STUFF FOR ALL HTML======= */
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Playfair Display', serif;
+    background-color: #f6f1ed;
+}
+
+h1, h2, footer{
+    font-family: 'Raleway', sans-serif;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 42px;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 28px;
+}
+
+p{
+    font-family: 'Faustina', serif;
+    font-size: 18px;
+}
+
+
+a, a:visited, a:hover, a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/* ======HEADER FOR ALL HTML======= */
+
+header{
+    width: 100%;
+    top: 0;
+    background-color: yellow;
+    border-bottom: 5px #75794c solid;
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+    letter-spacing: 2px;
+}
+
+.header-container{
+    width: 980px;
+   margin: 0 auto;
+}
+
+.home{
+    display: block;
+    float: left;
+    vertical-align: middle;
+    padding: 20px;
+    text-align: center;
+}
+
+.home a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+
+.nav{
+    display: block;
+    float: right;
+    background-color: #fc452b;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    word-spacing: 16px;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    margin-top: 12px;
+}
+
+.nav a:hover{
+    text-decoration: underline;
+    color: black;
+}
+.nav ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+.nav ul li{
+    display: inline;
+}
+
+.nav ul li a{
+    text-align: center;
+}
+
+/* ======BODY - CONTENTS FOR ALL HTML======= */
+.contents{
+    max-width: 980px;
+    display: hidden;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom:100px;
+    overflow: none;
+}
+
+.article{
+    display: block;
+    background-color: white;
+    float: left;
+    max-width: 640px;
+    box-shadow: 0 0 10px #000;
+    padding: 20px;
+
+}
+
+#profilepic1{
+    max-width: 300px;
+    height: auto;
+    padding-right: 15px;
+    float:left;
+}
+
+
+
+.side-bar{
+    background-color: white;
+    max-width: 260px;
+    padding: 15px;
+    display: block;
+    float: right;
+    box-shadow: 0 0 10px #000;
+}
+
+
+img#github, img#linkedin, img#instagram{
+    width:70px;
+    height: auto;
+    float: left;
+    margin:5px;
+}
+
+
+
+
+
+/* ======CONTACT PAGE======= */
+
+label{
+    font-weight: bold;
+}
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: 'Faustina', serif;
+}
+
+input[type=submit] {
+    background-color: #fc452b;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Faustina', serif;
+}
+
+input[type=submit]:hover {
+    background-color: yellow;
+    font-family: 'Faustina', serif;
+}
+
+
+
+
+/* ======PORTFOLIO PAGE======= */
+#adobe-ps{
+    width: 120px;
+    height: auto;
+    float:left;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+#adobe-ai{
+    width: 120px;
+    height: auto;
+    float:left;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#drawing{
+    width: 120px;
+    height: auto;
+    float:left;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+#painting{
+    width: 120px;
+    height: auto;
+    float:left;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+
+
+
+/* ======FOOTER FOR ALL HTML======= */
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    margin-top: 20px;
+    background-color: #22264b;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+
+}
+
+
+/* ======MEDIA QUERIES FOR ALL HTML======= */
+
+@media screen and (max-width: 980px) { 
+    .header-container{
+        width: 100%;
+    }
+    .nav{
+        max-width: 423px;
+    }
+    
+    .article {
+        width: 65%;
+    }
+
+    .side-bar{
+        width: 25%
+    }
+}
+
+
+@media screen and (max-width: 768px) { 
+    .header-container{
+        width: 100%;
+    }
+
+
+    .home{
+        width: 35%;
+    }
+
+    .nav{
+        max-width: 423px;
+    }
+
+
+    .article {
+        max-width: 750px;
+        width: 100%;
+        margin: 9px;
+        margin-bottom: 30px;
+    }
+
+    .side-bar {
+        float: left;
+        max-width: 750px;
+        width: 100%;
+        margin: 9px;
+        margin-bottom: 100px;
+    }
+
+    #profilepic1 {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 640px) { 
+
+    .home{
+        width: 100%;
+    }
+
+    .nav{
+        width: 100%;
+    }
+
+    .article {
+        width: 100%;
+        margin: 9px;
+        margin-bottom: 30px;
+    }
+
+    .side-bar {
+        width: 100%;
+        margin: 9px;
+        margin-bottom: 100px;
+    }
+
+    #profilepic1 {
+        max-width: 300px;
+    }
+}
